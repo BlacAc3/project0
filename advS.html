@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav id="advnavbar">
+        <img src="Img/googlesearchlogo.png" alt="google logo">
+        <div id="GglS"><a href="index.html">Search</a></div>
+        <div id="ImgS"><a href="imgS.html">Image Search</a></div>
+    </nav>
+   
+
+    <header >
+        <div class="advcontainer">Advanced Search</div>
+    </header>
+
+    <section>
+        <form>
+            <div class="advcontainer">     <!--container-->
+                <div id="heading">
+                <div class="hed">Find pages with..</div>
+                <div class="hideside">To do this in the search box.</div>
+                </div>
+                <div id="section1">     <!--1st sectiion of lists or parameters-->
+                    
+                        <label class="allwords">all these words:</label>
+                        <input type="text" name="allwords" class="allwords">
+                        <div id="allwords" class="hideside">Type the important words: tri-colour rat terrier</div>
+                    
+                        <label class="exactword">this exact word or phrase:</label>
+                        <input type="text" name="exactword" class="exactword">
+                        <div id="exactword" class="hideside">Put exact words in quotes: "rat terrier"</div>
+                    
+                        <label class="anywords">any of these words:</label>
+                        <input type="text" name="anywords" class="anywords">
+                        <div id="anywords" class="hideside">Type OR between all the words you want: miniature OR standard</div>
+                    
+                        <label class="nonewords">none of these words:</label>
+                        <input type="text" name="nonewords" class="nonewords">
+                        <div id="nonewords" class="hideside">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+                    
+                        <label>numbers ranging from:</label>
+                        <div id="yo"><input type="text" name="numfrom1" > to <input type="text" name="numfrom2"></div>
+                        <div id="numfrom" class="hideside">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</div> 
+                </div>  <!--section1 closing element-->
+                
+                
+                <div id ="heading2" class="hed">Then narrow your results by...</div>
+                <div id="section2">     <!--2nd section starting element-->
+                        <label class="lang">language:</label>
+                        <input name="lang" list="languages">
+                            <datalist id="languages">
+                                <option value="Afrikaans">
+                                <option value="Arabic">
+                                <option value="Armenian">
+                                <option value="Belarusian">      
+                                <option value ="Bulgarian">     
+                                <option value="Catalan">  
+                                <option value="Chinese(Simplified)">
+                                <option value="Chinese(Traditional)">
+                                <option value="Croatian">
+                                <option value="Czech">
+                                <option value="Danish">
+                                <option value="Dutch">
+                                <option value="English">
+                                <option value="Esperanto">
+                                <option value="Estonian">
+                                <option value="Filipino">
+                                <option value="Finnish">
+                                <option value="French">
+                                <option value="German">
+                                <option value="Greece">
+                                <option value="Hebrew">
+                                <option value="Hindi">
+                                <option value="Hungarian">
+                                <option value="Icelandic">
+                                <option value="indonesian">
+                                <option value="Indonesia">
+                                <option value="Iran">
+                                <option value="Italian">
+                                <option value="Japanese">
+                                <option value="Korean">
+                                <option value="Latvian">
+                                <option value="Lithuanian">
+                                <option value="Norwegian">
+                                <option value="Persian">
+                                <option value="Portuguese">
+                                <option value="Romanian">
+                                <option value="Russian">
+                                <option value="Serbian">
+                                <option value="Slovak">
+                                <option value="Slovenian">
+                                <option value="Spanish">
+                                <option value="Swahili">
+                                <option value="Swedish">
+                                <option value="Thai">
+                                <option value="Turkish">
+                                <option value="Ukranian">
+                                <option value="Vietnamese">
+                            </datalist>
+                            <div id="lang" class="hideside">Find pages in the language that you select.</div>
+                    
+                        <label class="region">region:</label>
+                        <input name="region" list="regions">
+                            <datalist id="regions">
+                                <option value="any region">
+                                <option value="Argentina">
+                                <option value="Australia">
+                                <option value="Brazil">
+                                <option value="Canada">
+                                <option value="China">
+                                <option value="Colombia">
+                                <option value="Costa Rica">
+                                <option value="Croatia">
+                                <option value="Czech Republic">
+                                <option value="Denmark">
+                                <option value="Egypt">
+                                <option value="Finland">
+                                <option value="France">
+                                <option value="Germany">
+                                <option value="Greece">
+                                <option value="Hungary">
+                                <option value="India">
+                                <option value="Indonesia">
+                                <option value="Ireland">
+                                <option value="Italy">
+                                <option value="Japan">
+                                <option value="Mexico">
+                                <option value="Nigeria">
+                                <option value="New Zealand">
+                                <option value="Norway">
+                                <option value="Poland">
+                                <option value="Portugal">
+                                <option value="South Africa">
+                                <option value="Spain">
+                                <option value="Sweden">
+                                <option value="Switzerland">
+                                <option value="United Kingdom">
+                                <option value="United States">
+                            </datalist>
+                        <div id="region" class="hideside">Find pages published in a particular region.</div>
+
+                    
+                        <label class="lastupdate">last update: </label>
+                        <input name="lastupdate" list="lastupdate">
+                            <datalist id="lastupdate">
+                                <option value="anytime">
+                                <option value="past 24 hours">
+                                <option value="past week">
+                                <option value="past month">
+                                <option value="past year">
+                            </datalist>
+                        <div id="lastupdate" class="hideside">Find pages updated within the time that you specify.</div>    
+
+                    
+                        <label class="domain">site or domain:</label>
+                        <input type="text" name="domain">
+                        <div id="domain" class="hideside">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</div>
+
+                    
+                        <label class="termpos">terms appearing:</label>
+                        <input name="termspos" list="termspos">
+                            <datalist id-="termspos">
+                                <option value="anywhere in the page">
+                                <option value="in the title of the page">
+                                <option value="in the text of the page">
+                                <option value="in the URL of the page">
+                                <option value="in the links to the page">
+                            </datalist>
+                        <div id="termpos" class="hideside">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</div>
+
+                  
+                        <label class="safesearch"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en" id="advs">SafeSearch: </a></label>
+                        <input name="safesearch" list="safesearch">
+                            <datalist id="safesearch">
+                                <option value="Show explicit results">
+                                <option value="Hide explicit results">
+                            </datalist>
+                        <div id="safesearch" class="hideside">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en" id="ss" style="font-size: 12px; margin-left: 10px; align-self: center;">SafeSearch</a> whether to filter sexually explicit content.</div>
+
+                    
+                        <label class="filetype">file type:</label>
+                        <input name="filetype" list="filetype">
+                            <datalist id="filetype">
+                                <option value="any format">
+                                <opton value="Adobe Acrobat PDF(.pdf)">
+                                <option value="Adobe Postscript(.ps)">
+                                <option value="Autodesk DWF (.dwf)">
+                                <option value="Google Earth KML (.kml)">
+                                <option value="Google Earth KMZ (.kmz)">
+                                <option value="Microsoft Excel (.xls)">
+                                <option value="Microsoft PowerPoint (.ppt)">
+                                <option value="Microsoft Word (.doc)">
+                                <option value="Rich Text Format (.rtf)">
+                                <option value="Shockwave Flash (.swf)">
+                            </datalist>
+                        <div id="filetype" class="hideside">Find pages in the format that you prefer.</div>
+
+                    
+                        <label class="usgrights"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage right:</a></label>
+                        <input name="usgrights" list="usgrights">
+                            <datalist id="usgrights">
+                                <option value="not filtered by licence">
+                                <option value="free to use or share">
+                                <option value="free to use or share, even commercially">
+                                <option value="free to use share or modify">
+                                <option value="free to use share or modify, even commercially">
+                                
+                            </datalist>
+                        <div id="usgrights" class="hideside">Find pages that you are free to use yourself.</div> 
+                   
+
+                        <div id="advanced"><input value="Advanced Search" name="advs" type="submit"></div>
+                </div>      <!--2nd section closing element-->
+
+                <div id="section3">
+                    <div id="sect3">You can also...</div>
+
+                    <div id="links">
+                        <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a>
+                        <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a>
+                        <a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a>
+                        <a href="https://www.google.com.ng/preferences?hl=en-NG">Customise your search settings</a>
+
+                    </div>   
+                </div>
+
+            </div>  <!--container closing element-->
+
+            
+        </form>
+    </section>
+
+
+
+</body>
+</html>
